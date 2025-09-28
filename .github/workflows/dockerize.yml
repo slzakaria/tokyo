@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - run: echo "Starting checkout and docker build & tag process by ${{ github.actor }}"
       - run: echo "JOB ID =====> ${{ github.run_id }} from branch ${{ github.ref }}"
 
