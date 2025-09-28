@@ -1,0 +1,11 @@
+User-agent: Googlebot
+Disallow:
+
+User-agent: Bingbot
+Disallow:
+Crawl-delay: 10
+
+User-agent: *
+Disallow:
+
+Sitemap: https://zakariaslimane.dev/sitemap.xml/

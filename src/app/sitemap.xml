@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://zakariaslimane.dev</loc>
+		<changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://zakariaslimane.dev/about</loc>
+		<changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://zakariaslimane.dev/projects</loc>
+		<changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://zakariaslimane.dev/articles</loc>
+		<changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://zakariaslimane.dev/speaking</loc>
+		<changefreq>weekly</changefreq>
+  </url>
+</urlset>

@@ -1,0 +1,46 @@
+{
+  "name": "zakariaslimane",
+  "description": "Personal portfolio",
+  "author": {
+    "name": "Zakaria Slimane",
+    "email": "slzackaria@gmail.com",
+    "url": "https://zakariaslimane.dev/"
+  },
+  "license": "MIT",
+  "version": "2.2.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "browserslist": "defaults, not ie <= 11",
+  "dependencies": {
+    "@headlessui/react": "^2.2",
+    "@mapbox/rehype-prism": "^0.9",
+    "@mdx-js/loader": "^3.1",
+    "@mdx-js/react": "^3.1",
+    "@next/mdx": "^15",
+    "@tailwindcss/postcss": "^4.1",
+    "@tailwindcss/typography": "^0.5",
+    "cheerio": "^1.1",
+    "clsx": "^2.1",
+    "fast-glob": "^3.3",
+    "feed": "^5.1",
+    "next": "^15",
+    "next-themes": "^0.4",
+    "react": "^19",
+    "react-dom": "^19",
+    "remark-gfm": "^4.0",
+    "tailwindcss": "^4.1",
+    "@vercel/analytics": "^1",
+    "@vercel/speed-insights": "^1"
+  },
+  "devDependencies": {
+    "eslint": "^9.32",
+    "eslint-config-next": "^15",
+    "prettier": "^3.6",
+    "prettier-plugin-tailwindcss": "^0.6",
+    "sharp": "0.34"
+  }
+}
