@@ -257,7 +257,7 @@ export default async function Home() {
               icon={LinkedInIcon}
             />
             <SocialLink
-              href="mailto:slzackaria@gmail.com'"
+              href="mailto:slzackaria@gmail.com"
               aria-label="Send me an email"
               icon={EnvelopeIcon}
             />
