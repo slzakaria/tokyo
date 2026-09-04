@@ -216,7 +216,7 @@ function Resume() {
         ))}
       </ol>
       <Button
-        href="https://drive.google.com/file/d/1Ybyhe-cHJ2Cv_Cm52JRbgZNggO62tDrj/view?usp=sharing"
+        href="https://drive.google.com/file/d/1f0WwQd0nugxriDU9TwTWevInt9t8j0O6/view?usp=drive_link"
         target="_blank"
         variant="secondary"
         className="group mt-6 w-full"
@@ -249,11 +249,13 @@ export default async function Home() {
             <SocialLink
               href="https://github.com/slzakaria"
               aria-label="Follow on GitHub"
+              target="_blank"
               icon={GitHubIcon}
             />
             <SocialLink
               href="https://www.linkedin.com/in/zakaria-slimane/"
               aria-label="Follow on LinkedIn"
+              target="_blank"
               icon={LinkedInIcon}
             />
             <SocialLink
@@ -262,7 +264,8 @@ export default async function Home() {
               icon={EnvelopeIcon}
             />
             <SocialLink
-              href="https://drive.google.com/file/d/1Ybyhe-cHJ2Cv_Cm52JRbgZNggO62tDrj/view?usp=sharing"
+              href="https://drive.google.com/file/d/1f0WwQd0nugxriDU9TwTWevInt9t8j0O6/view?usp=drive_link"
+              target="_blank"
               aria-label="Download my resume"
               icon={DocumentIcon}
             />

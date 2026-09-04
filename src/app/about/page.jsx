@@ -79,16 +79,19 @@ export default function About() {
             <SocialLink
               href="https://github.com/slzakaria"
               aria-label="Follow on GitHub"
+              target="_blank"
               icon={GitHubIcon}
             />
             <SocialLink
               href="https://www.linkedin.com/in/zakaria-slimane/"
+              target="_blank"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
             <SocialLink href="mailto:slzackaria@gmail.com" icon={MailIcon} />
             <SocialLink
               href="https://drive.google.com/file/d/1f0WwQd0nugxriDU9TwTWevInt9t8j0O6/view?usp=drive_link"
+              target="_blank"
               aria-label="Download my resume"
               icon={DocumentIcon}
             />
