@@ -6,7 +6,7 @@ import '@/styles/tailwind.css'
 export const metadata = {
   title: {
     template: '%s - Zakaria Slimane',
-    default: 'Zakaria Slimane | Software Developer DevOps & Cloud',
+    default: 'Zakaria Slimane | Senior Software Developer DevOps & Cloud',
   },
   icons: {
     icon: '/favicon.ico',
@@ -14,7 +14,7 @@ export const metadata = {
     apple: '/apple-touch-icon.png',
   },
   description:
-    'I’m Zakaria Slimane, a software developer and cloud enthusiast with an AWS Solutions Architect certification. I love building efficient and scalable applications, exploring new technologies, and sharing my knowledge through blogging.',
+    'I’m Zakaria Slimane, a senior software developer and cloud enthusiast with an AWS Solutions Architect certification. I love building efficient and scalable applications, exploring new technologies, and sharing my knowledge through blogging.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,

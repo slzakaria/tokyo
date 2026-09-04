@@ -13,8 +13,8 @@ import { getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
 export const metadata = {
-  title: 'Zakaria Slimane | Software Developer DevOps & Cloud',
-  description: 'Zakaria Slimane | Software Developer DevOps & Cloud',
+  title: 'Zakaria Slimane | Senior Software Developer DevOps & Cloud',
+  description: 'Zakaria Slimane | Senior Software Developer DevOps & Cloud',
 }
 
 function MailIcon(props) {
@@ -168,7 +168,7 @@ function Resume() {
   let resume = [
     {
       company: 'Wirky',
-      title: 'Software developer',
+      title: 'Senior Software developer',
       start: '2024',
       end: {
         label: 'Present',
