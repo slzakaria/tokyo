@@ -88,7 +88,7 @@ export default function About() {
             />
             <SocialLink href="mailto:slzackaria@gmail.com" icon={MailIcon} />
             <SocialLink
-              href="https://drive.google.com/file/d/1Ybyhe-cHJ2Cv_Cm52JRbgZNggO62tDrj/view?usp=sharing"
+              href="https://drive.google.com/file/d/1f0WwQd0nugxriDU9TwTWevInt9t8j0O6/view?usp=drive_link"
               aria-label="Download my resume"
               icon={DocumentIcon}
             />
