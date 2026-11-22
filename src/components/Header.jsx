@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useSyncExternalStore } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -15,6 +15,18 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import avatarImage from '@/images/zs.png'
+
+function subscribeToMount() {
+  return () => {}
+}
+
+function getMountSnapshot() {
+  return true
+}
+
+function getServerMountSnapshot() {
+  return false
+}
 
 function CloseIcon(props) {
   return (
@@ -163,11 +175,11 @@ function DesktopNavigation(props) {
 function ThemeToggle() {
   let { resolvedTheme, setTheme } = useTheme()
   let otherTheme = resolvedTheme === 'dark' ? 'light' : 'dark'
-  let [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
+  let mounted = useSyncExternalStore(
+    subscribeToMount,
+    getMountSnapshot,
+    getServerMountSnapshot,
+  )
 
   return (
     <button

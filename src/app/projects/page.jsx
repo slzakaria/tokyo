@@ -3,6 +3,15 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 
 const projects = [
   {
+    name: 'Hanazono',
+    description: 'Japanese learning app with spaced repetition',
+    link: {
+      href: 'https://hanazono.fyi/',
+      label: 'Hanazono',
+    },
+    featured: true,
+  },
+  {
     name: 'Fin tracker',
     description: 'Personal Finance Management',
     link: {
