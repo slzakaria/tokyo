@@ -14,26 +14,14 @@ function usePrevious(value) {
   return state.previous
 }
 
-function ThemeWatcher() {
-  let { resolvedTheme, setTheme } = useTheme()
+function ThemePreferenceMigration() {
+  let { theme, setTheme } = useTheme()
 
   useEffect(() => {
-    let media = window.matchMedia('(prefers-color-scheme: dark)')
-
-    function onMediaChange() {
-      let systemTheme = media.matches ? 'dark' : 'light'
-      if (resolvedTheme === systemTheme) {
-        setTheme('system')
-      }
+    if (theme === 'system') {
+      setTheme('light')
     }
-
-    onMediaChange()
-    media.addEventListener('change', onMediaChange)
-
-    return () => {
-      media.removeEventListener('change', onMediaChange)
-    }
-  }, [resolvedTheme, setTheme])
+  }, [theme, setTheme])
 
   return null
 }
@@ -46,8 +34,14 @@ export function Providers({ children }) {
 
   return (
     <AppContext.Provider value={{ previousPathname }}>
-      <ThemeProvider attribute="class" disableTransitionOnChange>
-        <ThemeWatcher />
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="light"
+        enableSystem={false}
+        themes={['light', 'dark']}
+        disableTransitionOnChange
+      >
+        <ThemePreferenceMigration />
         {children}
       </ThemeProvider>
     </AppContext.Provider>
